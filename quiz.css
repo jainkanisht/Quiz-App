@@ -1,0 +1,199 @@
+body {
+  font-family: Arial, sans-serif;
+  background: pink;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-container {
+  margin-top: 30px;
+  width: 90%;
+  max-width: 400px;
+  background: white;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#scoreboard {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+#timer {
+  color: #ff5722;
+  font-weight: bold;
+}
+
+#question {
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.option-btn {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  background: #eee;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.option-btn:hover {
+  background: #dcdcdc;
+}
+
+#nextBtn {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+#scoreBox {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#restartBtn,
+#shareBtn,#downloadPdfBtn {
+  display: none;
+  margin: 10px;
+  padding: 10px 15px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#restartBtn:hover,
+#shareBtn:hover {
+  background-color: #0b7dda;
+}
+
+.feedback-message {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #f44336;
+  text-align: center;
+}
+body.dark {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark .quiz-container {
+  background-color: #1e1e1e;
+  color: #fff;
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.05);
+}
+
+body.dark .option-btn {
+  background: #2e2e2e;
+  color: white;
+}
+
+body.dark .option-btn:hover {
+  background: #3e3e3e;
+}
+
+body.dark #nextBtn {
+  background-color: #388e3c;
+}
+
+body.dark #restartBtn,
+body.dark #shareBtn {
+  background-color: #1565c0;
+}
+
+body.dark #restartBtn:hover,
+body.dark #shareBtn:hover {
+  background-color: #0d47a1;
+}
+
+.dark-mode-toggle {
+  margin-top: 50px;
+  text-align: right;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+#difficultyLabel {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.easy {
+  color: green;
+}
+
+.medium {
+  color: orange;
+}
+
+.hard {
+  color: red;
+}
+.progress-container {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin: 10px 0 15px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #4caf50;
+  transition: width 0.3s ease;
+}
+#skipBtn {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+#skipBtn:hover {
+  background-color: #e68a00;
+}
+
+body.dark #skipBtn {
+  background-color: #f57c00;
+}
+
+body.dark #skipBtn:hover {
+  background-color: #ef6c00;
+}
+#downloadPdfBtn {
+  display: none;
+}

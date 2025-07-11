@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="quiz.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  
+  <div class="quiz-container">
+    <div class="dark-mode-toggle">
+  <label>
+    <input type="checkbox" id="darkToggle" />
+    🌙
+  </label>
+  <div id="difficultyLabel"></div>
+</div>
+
+    <h1>Quiz App</h1>
+
+  <!-- Progress Bar -->
+<div class="progress-container">
+  <div class="progress-bar" id="progressBar"></div>
+</div>
+  
+  <div id="scoreboard">
+  <span id="scoreDisplay">Score: 0</span>
+  <span id="questionCounter">Question: 1/20</span>
+  <span id="timer">Time Left: 20s</span>
+</div>
+
+
+
+<div id="question">Loading...</div>
+
+    <div id="options"></div>
+    <div id="feedback" class="feedback-message"></div>
+    <button id="nextBtn">Next</button>
+    <button id="skipBtn">Skip</button>
+
+
+    <div id="scoreBox">
+      <canvas id="resultChart" width="200" height="200"></canvas><br /><br />
+      <button id="restartBtn">Restart Quiz</button>
+      <button id="shareBtn">Share Result</button>
+      <button id="downloadPdfBtn">Download as PDF</button>
+    </div>
+    <div id="difficultyLabel"></div>
+  </div>
+  
+
+  <script src="quiz.js"></script>
+</body>
+</html>
