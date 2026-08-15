@@ -9,6 +9,8 @@ const questions = [
     answer: "HyperText Markup Language",
     difficulty: "Easy"
   },
+
+  // these are the questions for the quiz
   {
     question: "Which language is used to style web pages?",
     options: ["HTML", "JQuery", "CSS", "XML"],
